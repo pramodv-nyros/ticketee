@@ -30,7 +30,7 @@ end
 group :test do
   gem 'cucumber-rails'
   gem 'capybara'
-  gem 'database_cleaner'
+  gem 'database_cleaner' # which is used by cucumber_rails to clear out the database at the end of each test run to ensure you’re working with a pristine state each time.
 end
 
 # To use ActiveModel has_secure_password
